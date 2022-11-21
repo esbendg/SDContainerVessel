@@ -41,7 +41,10 @@ public abstract class Vessel {
       */
     public int utilityLevelOfCapacity(){
          if (this.currentCargo == this.maxCargo){
+
+             System.out.println("Level of capacity used is " + this.currentCargo*100/this.getMaxCargo() + " %");
              return 0;
+
          } else
              System.out.println("Level of capacity used is " + this.currentCargo*100/this.getMaxCargo() + " %");
        return this.getMaxCargo()-this.currentCargo;
